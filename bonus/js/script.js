@@ -12,20 +12,36 @@ let cognome = prompt("Inserisci il tuo cognome");
 // console.log(cognome);
 
 let colorePreferito = prompt("Inserisci il tuo colore preferito");
-// console.log(colorePreferito);
+console.log(colorePreferito);
 
-const numeroDopoLaPassword = 21;
+let numeroDopoLaPassword = 21;
+
+if (colorePreferito == "Rosso" || colorePreferito == "rosso") {
+    numeroDopoLaPassword = 55;
+}
+else {
+    numeroDopoLaPassword = numeroDopoLaPassword;
+}
+
 // console.log(numeroDopoLaPassword);
 
 // document.getElementById("generator").innerHTML = "La password assegnata è: " + nome + cognome + colorePreferito + numeroDopoLaPassword;
 
+
 // ----OPPURE----
 
-document.getElementById("generator").innerHTML = 
+
+/* document.getElementById("generator").innerHTML = 
 `
 La password assegnata è: ${nome}${cognome}${colorePreferito}${numeroDopoLaPassword}
-`;
+`; */
 
-if (colorePreferito = "Rosso") {
-    numeroDopoLaPassword = 55
-}
+
+// ---OPPURE----
+
+
+let passwordAssegnata = ` ${nome}${cognome}${colorePreferito}${numeroDopoLaPassword} `;
+// console.log(passwordAssegnata);
+
+document.getElementById("generator").innerHTML = `
+La password assegnata è: ${passwordAssegnata} `;
