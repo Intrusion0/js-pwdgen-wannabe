@@ -17,11 +17,11 @@ let colorePreferito = prompt("Inserisci il tuo colore preferito");
 const numeroDopoLaPassword = 21;
 // console.log(numeroDopoLaPassword);
 
-// document.getElementById("generator").innerHTML = "La tua password è: " + nome + cognome + colorePreferito + numeroDopoLaPassword;
+// document.getElementById("generator").innerHTML = "La password assegnata è: " + nome + cognome + colorePreferito + numeroDopoLaPassword;
 
 // ----OPPURE----
 
 document.getElementById("generator").innerHTML = 
 `
-La tua password è: ${nome}${cognome}${colorePreferito}${numeroDopoLaPassword}
+La password assegnata è: ${nome}${cognome}${colorePreferito}${numeroDopoLaPassword}
 `;
