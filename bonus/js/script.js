@@ -26,5 +26,6 @@ document.getElementById("generator").innerHTML =
 La password assegnata è: ${nome}${cognome}${colorePreferito}${numeroDopoLaPassword}
 `;
 
-// ---OPPURE----
-
+if (colorePreferito = "Rosso") {
+    numeroDopoLaPassword = 55
+}
