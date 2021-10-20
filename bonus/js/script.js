@@ -41,7 +41,12 @@ La password assegnata è: ${nome}${cognome}${colorePreferito}${numeroDopoLaPassw
 
 
 let passwordAssegnata = ` ${nome}${cognome}${colorePreferito}${numeroDopoLaPassword} `;
-// console.log(passwordAssegnata);
+// // console.log(passwordAssegnata);
 
 document.getElementById("generator").innerHTML = `
 La password assegnata è: ${passwordAssegnata} `;
+
+
+// ----OPPURE----
+
+// alert("La password assegnata è:" + passwordAssegnata);

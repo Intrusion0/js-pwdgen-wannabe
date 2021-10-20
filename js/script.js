@@ -37,3 +37,8 @@ let passwordAssegnata = ` ${nome}${cognome}${colorePreferito}${numeroDopoLaPassw
 
 document.getElementById("generator").innerHTML = `
 La password assegnata è: ${passwordAssegnata} `;
+
+
+// ----OPPURE----
+
+// alert("La password assegnata è:" + passwordAssegnata);
