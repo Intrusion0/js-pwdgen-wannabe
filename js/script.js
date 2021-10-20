@@ -19,12 +19,21 @@ const numeroDopoLaPassword = 21;
 
 // document.getElementById("generator").innerHTML = "La password assegnata è: " + nome + cognome + colorePreferito + numeroDopoLaPassword;
 
+
 // ----OPPURE----
 
-document.getElementById("generator").innerHTML = 
+
+/* document.getElementById("generator").innerHTML = 
 `
 La password assegnata è: ${nome}${cognome}${colorePreferito}${numeroDopoLaPassword}
-`;
+`; */
+
 
 // ---OPPURE----
 
+
+let passwordAssegnata = ` ${nome}${cognome}${colorePreferito}${numeroDopoLaPassword} `;
+console.log(passwordAssegnata);
+
+document.getElementById("generator").innerHTML = `
+La password assegnata è: ${passwordAssegnata} `;
